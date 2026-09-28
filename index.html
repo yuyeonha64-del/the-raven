@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="THE RAVEN — 뱀파이어 의사 발렌틴 워드의 프로필과 중세 판타지 세계관 소개">
+<meta name="theme-color" content="#070708">
+<meta property="og:type" content="website">
+<meta property="og:title" content="THE RAVEN — Valentin Ward">
+<meta property="og:description" content="뱀파이어 의사 발렌틴 워드의 프로필과 시대 배경, 레이븐 세계관 아카이브.">
+<title>THE RAVEN — Valentin Ward</title>
+<style>
+:root{
+ --black:#070708; --black2:#101013; --panel:#141417; --red:#9f1721;
+ --red2:#5d0d14; --white:#f5f3ef; --soft:#c8c4c0; --line:#343438;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:var(--black);color:var(--white);
+ font-family:"Noto Serif KR","Nanum Myeongjo","Batang",serif;
+ line-height:1.85;word-break:keep-all;
+}
+body:before{
+ content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+ background:
+ radial-gradient(circle at 78% 8%,rgba(159,23,33,.20),transparent 27%),
+ radial-gradient(circle at 12% 52%,rgba(159,23,33,.08),transparent 25%),
+ linear-gradient(120deg,transparent 0 49.8%,rgba(255,255,255,.015) 50%,transparent 50.2%);
+}
+a{color:inherit}
+nav{
+ position:sticky;top:0;z-index:20;display:flex;justify-content:center;gap:24px;
+ padding:13px 18px;background:rgba(7,7,8,.88);backdrop-filter:blur(12px);
+ border-bottom:1px solid #2b2b2e;font-family:Arial,sans-serif;
+ font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+}
+nav a{text-decoration:none;color:#aaa;transition:.2s}
+nav a:hover{color:#fff}
+.hero{
+ min-height:92vh;display:grid;align-items:center;padding:70px max(7vw,28px);
+ position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+}
+.hero:after{
+ content:"V";position:absolute;right:-1vw;bottom:-16vh;
+ font:700 min(70vw,820px)/1 Georgia,serif;color:rgba(255,255,255,.018);
+}
+.hero-inner{max-width:1040px;position:relative;z-index:2}
+.eyebrow{
+ font-family:Arial,sans-serif;color:#d83a44;letter-spacing:.35em;
+ text-transform:uppercase;font-size:.72rem;margin-bottom:22px
+}
+h1{
+ margin:0;font-family:Georgia,"Times New Roman",serif;
+ font-size:clamp(4rem,12vw,9.5rem);line-height:.82;letter-spacing:-.055em;
+ font-weight:400;
+}
+h1 span{display:block;color:var(--red);font-style:italic}
+.hero-copy{
+ margin:42px 0 0;max-width:720px;color:#d1cdca;font-size:1.05rem;
+ border-left:2px solid var(--red);padding-left:24px;
+}
+.hero-meta{
+ margin-top:34px;display:flex;gap:10px;flex-wrap:wrap;
+ font-family:Arial,sans-serif;font-size:.68rem;letter-spacing:.12em;
+}
+.hero-meta span{border:1px solid #3b3b3f;padding:8px 11px;color:#bdbdbf}
+.wrap{width:min(1160px,calc(100% - 34px));margin:auto}
+section{padding:92px 0;border-bottom:1px solid #242427}
+.section-no{
+ font-family:Arial,sans-serif;color:var(--red);font-size:.68rem;
+ letter-spacing:.25em;text-transform:uppercase;
+}
+h2{
+ font-size:clamp(2rem,5vw,4rem);font-weight:400;margin:.15em 0 .8em;
+ letter-spacing:-.035em;
+}
+.intro{font-size:1.15rem;max-width:850px;color:#dedbd7}
+.profile-grid{display:grid;grid-template-columns:.82fr 1.55fr;gap:60px}
+.data{border-top:1px solid #555}
+.data-row{display:grid;grid-template-columns:120px 1fr;padding:13px 0;border-bottom:1px solid #29292d}
+.data-row b{color:#888;font:600 .68rem Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.data-row span{color:#eee}
+.pull{
+ margin:42px 0;padding:30px 0;border-top:1px solid var(--red);border-bottom:1px solid var(--red);
+ font-size:clamp(1.45rem,3vw,2.25rem);line-height:1.55;color:#fff;
+}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.card{background:var(--panel);border:1px solid #29292d;padding:25px;min-height:190px}
+.card .num{font:italic 2.3rem Georgia,serif;color:var(--red)}
+.card h3{font-size:1rem;margin:8px 0;color:#fff}
+.card p{font-size:.9rem;color:#aaa;margin:0}
+.redband{
+ background:linear-gradient(105deg,#610d14,#9f1721 55%,#590a10);
+ padding:70px max(7vw,28px);margin:0;
+}
+.redband .inner{width:min(1050px,100%);margin:auto}
+.redband p{font-size:clamp(1.4rem,3.2vw,2.5rem);line-height:1.55;margin:0;max-width:920px}
+.timeline{margin-top:35px;border-left:1px solid #555;padding-left:30px}
+.timeline article{position:relative;margin:0 0 36px}
+.timeline article:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--red);left:-35px;top:.6em}
+.timeline h3{margin:0 0 5px;font-size:1.05rem}
+.timeline p{margin:0;color:#aaa}
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.rule{padding:23px;border:1px solid #2e2e32;background:#0d0d0f}
+.rule b{display:block;color:#d73a43;margin-bottom:7px}
+.rule p{margin:0;color:#bbb;font-size:.92rem}
+.heart{
+ text-align:center;padding:120px 25px;
+ background:radial-gradient(circle,rgba(159,23,33,.20),transparent 38%);
+}
+.heart .mark{font:italic 5rem Georgia,serif;color:var(--red)}
+.heart blockquote{
+ max-width:850px;margin:20px auto;font-size:clamp(1.55rem,3.5vw,2.7rem);
+ line-height:1.6;font-weight:400;
+}
+.heart small{color:#888;font-family:Arial,sans-serif;letter-spacing:.15em}
+footer{
+ padding:45px;text-align:center;color:#666;font:11px Arial,sans-serif;
+ letter-spacing:.22em;text-transform:uppercase
+}
+@media(max-width:760px){
+ nav{justify-content:flex-start;overflow-x:auto;white-space:nowrap}
+ .profile-grid,.rules{grid-template-columns:1fr}.cards{grid-template-columns:1fr}
+ .hero{min-height:82vh}.data-row{grid-template-columns:100px 1fr}
+ section{padding:65px 0}
+}
+</style>
+</head>
+<body>
+<nav>
+ <a href="#valentin">Valentin</a><a href="#character">Character</a>
+ <a href="#age">The Age</a><a href="#raven">Raven</a>
+ <a href="#vampire">Vampires</a><a href="#core">Core</a>
+</nav>
+
+<header class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">The Raven · Character & World Archive</div>
+  <h1>VALENTIN <span>WARD</span></h1>
+  <p class="hero-copy">사람의 목숨이 걸린 순간에는 무서울 정도로 유능하면서, 인간의 피를 먹고 살아가는 뱀파이어 의사. 수많은 심장박동을 질병과 먹이의 신호로 구별해 온 그에게 어느 날 단 하나의 심장박동이 다른 의미를 갖기 시작한다.</p>
+  <div class="hero-meta"><span>AGE 43 / BODY 33</span><span>KIN VAMPIRE</span><span>PHYSICIAN</span><span>188 CM</span></div>
+ </div>
+</header>
+
+<main>
+<section id="valentin"><div class="wrap">
+ <div class="section-no">01 / Profile</div><h2>검은 장갑의 의사</h2>
+ <div class="profile-grid">
+  <div class="data">
+   <div class="data-row"><b>Name</b><span>발렌틴 워드 · Valentin Ward</span></div>
+   <div class="data-row"><b>Age</b><span>실제 43세 · 육체 33세</span></div>
+   <div class="data-row"><b>Species</b><span>뱀파이어 · 킨</span></div>
+   <div class="data-row"><b>Career</b><span>의사</span></div>
+   <div class="data-row"><b>Height</b><span>188cm</span></div>
+   <div class="data-row"><b>Life</b><span>인간 33년 · 뱀파이어 10년</span></div>
+   <div class="data-row"><b>Companion</b><span>애완 까마귀 ‘블랙’</span></div>
+  </div>
+  <div>
+   <p class="intro">서른셋에 뱀파이어가 된 발렌틴은 인간성을 잊은 고대의 존재도, 본능을 통제하지 못하는 신생 뱀파이어도 아니다. 인간으로 살아온 사고방식과 의사의 습관이 깊게 남아 있는 동시에 지난 10년 동안 흡혈과 갈증, 초인적인 육체와 밤의 질서에 충분히 적응했다.</p>
+   <p>188cm의 장신에 넓은 어깨, 창백한 피부, 긴 검은 머리와 호박색 눈을 지녔다. 좋은 직물과 정교한 재단의 올블랙 의상을 입으며 양손에는 거의 항상 검은 장갑을 낀다. 장갑은 인간을 치료하는 의사의 손과 인간의 피를 원하는 뱀파이어의 손을 동시에 가리는 그의 상징이다.</p>
+   <div class="pull">인간을 먹이라고 생각하면서도<br>누구보다 인간을 살리는 데 집착한다.</div>
+  </div>
+ </div>
+</div></section>
+
+<section id="character"><div class="wrap">
+ <div class="section-no">02 / Character</div><h2>냉정함과 다정함 사이</h2>
+ <p class="intro">발렌틴은 감정보다 사실을, 의도보다 결과를 중시하는 현실주의자다. 죽음 앞에서도 먼저 상처와 호흡, 의식과 맥박을 확인한다. 살릴 수 있다면 집요하게 방법을 찾고, 돌이킬 수 없다면 거짓 희망을 말하지 않는다.</p>
+ <div class="cards">
+  <div class="card"><div class="num">I</div><h3>합리적인 현실주의자</h3><p>선악의 명분보다 실제 결과와 효과를 본다. 지위보다 실력과 근거를 존중하며 자신의 가설이 틀렸다면 수정한다.</p></div>
+  <div class="card"><div class="num">II</div><h3>인정하지 않는 다정함</h3><p>환자를 끝까지 버리지 않고 죽은 이의 눈을 감겨 준다. 그러나 자신은 이를 다정함이 아닌 ‘의사의 습관’이라고 생각한다.</p></div>
+  <div class="card"><div class="num">III</div><h3>극단적인 자기통제</h3><p>갈증과 식욕에 이성을 빼앗기는 것을 굴욕으로 여긴다. 굶을수록 난폭해지기보다 조용해지고 인간에게서 거리를 둔다.</p></div>
+  <div class="card"><div class="num">IV</div><h3>연구 집착</h3><p>관찰하고 기록하고 비교하며 가설을 검증한다. 연구에 빠지면 자신의 흡혈과 휴식조차 미룬다.</p></div>
+  <div class="card"><div class="num">V</div><h3>의외의 허당</h3><p>생사가 걸리면 완벽하지만 자기 몸에는 최악의 환자다. 힘 조절에 실패해 물건을 부수고도 물건이 낡았는지 먼저 살핀다.</p></div>
+  <div class="card"><div class="num">VI</div><h3>블랙</h3><p>애완 까마귀를 키운다는 사실은 굳이 인정하지 않으면서 먹이와 횃대를 챙긴다. 블랙은 그의 장갑과 깃펜을 훔치며 권위를 무너뜨린다.</p></div>
+ </div>
+</div></section>
+
+<div class="redband"><div class="inner">
+ <p>발렌틴에게 인간은 <strong>환자이면서 먹이</strong>다. 인간을 신성시하지도, 피를 원하는 자신의 본능을 비극으로 여기지도 않는다. 그러나 먹이를 죽이는 것은 잔혹함 이전에 자신의 식욕조차 통제하지 못한 무능이다.</p>
+</div></div>
+
+<section id="age"><div class="wrap">
+ <div class="section-no">03 / The Age</div><h2>촛불과 종소리의 시대</h2>
+ <p class="intro">THE RAVEN은 현실의 특정 국가·종교·역사와 직접 연결되지 않는 중세풍 독립 판타지 세계다. 전기와 현대 기계는 없다. 사람들은 말과 도보로 이동하고 촛불과 횃불로 밤을 밝힌다. 시간은 해와 달, 종소리와 촛불이 타는 정도로 가늠한다.</p>
+ <div class="cards">
+  <div class="card"><h3>무기와 화약</h3><p>칼·창·활·석궁·도끼가 중심이다. 초기 화약과 화포는 존재하지만 희귀하고 느리며 부정확하고 습기에 약하다.</p></div>
+  <div class="card"><h3>교회와 인간 사회</h3><p>이름 없는 하나의 교회와 수도원이 기록·약초·병자 돌봄에 관여한다. 십자가·성수·기도는 뱀파이어에게 아무 효과가 없다.</p></div>
+  <div class="card"><h3>쇠퇴한 마법</h3><p>마법은 세계를 지배하지 않는다. 극소수 인간에게 희미하게 남아 있을 뿐이며 대부분의 인간은 뱀파이어의 실재조차 모른다.</p></div>
+ </div>
+
+ <div class="timeline">
+  <article><h3>역병</h3><p>고열과 검게 부어오르는 멍울을 일으키며 마을을 비울 정도로 치명적이다. 사람들은 이를 신의 벌이나 나쁜 공기 등으로 이해한다.</p></article>
+  <article><h3>뱀파이어와 병든 피</h3><p>뱀파이어는 역병으로 죽지 않지만 병든 인간의 피는 능력과 회복을 떨어뜨린다. 인간의 죽음은 곧 건강한 먹이의 감소이므로 역병은 뱀파이어에게도 생존 문제다.</p></article>
+  <article><h3>발렌틴의 역설</h3><p>그가 역병 치료에 집착한 최초의 이유는 인류애가 아니라 자신의 생존이었다. 그러나 이기적인 동기로 시작한 연구는 결국 수많은 인간을 살리는 방향으로 향한다.</p></article>
+ </div>
+</div></section>
+
+<section id="raven"><div class="wrap">
+ <div class="section-no">04 / The Territory</div><h2>레이븐</h2>
+ <p class="intro">레이븐의 옛 이름은 ‘에버던’. 번영을 오래 이어 갈 땅이라는 이름이었으나 몰락 뒤에는 그 소리가 ‘EVER DOWN’과 닮아 처음부터 파멸을 예고했다는 전설이 생겼다.</p>
+ <p>인간이 사라지자 맑았던 ‘하늘호수’는 안개에 잠겨 ‘안개호수’가 되었고 숲은 옛길과 건물을 삼켰다. 폐허 위에 남은 고성 ‘니블헤임’은 뱀파이어들의 거점이며 가장 깊은 곳에는 오랜 수면에서 깨어난 로드 블라드가 있다.</p>
+ <div class="pull">로드가 다시 깨어난 지금,<br>레이븐은 더 이상 정지된 폐허가 아니다.</div>
+</div></section>
+
+<section id="vampire"><div class="wrap">
+ <div class="section-no">05 / Vampires</div><h2>피와 계승의 질서</h2>
+ <p class="intro">뱀파이어 사회는 혈통과 계승을 중심으로 이루어진다. 계급은 <strong>로드 &gt; 로열 &gt; 킨 &gt; 레서</strong>. 혈통이 아래로 내려갈수록 기본 신체 능력과 계승 가능한 디서플린의 범위가 감소한다.</p>
+ <div class="rules">
+  <div class="rule"><b>로드 · 블라드</b><p>유일한 절대자. 알려진 14종 디서플린 전부와 고유 능력 ‘외형 변경’을 지닌다. 총칼에도 끄떡없다.</p></div>
+  <div class="rule"><b>로열 · 루크벨† / 베리알# / 에드§</b><p>로드에게 직접 이어진 최상위 혈통. 기본적으로 세 개의 디서플린을 지니며 총칼로 해칠 수 없다.</p></div>
+  <div class="rule"><b>킨</b><p>발렌틴이 속한 계급. 디서플린 없이 시작해 상위 혈통에게 계승받는다. 인간을 압도하지만 총탄에는 상처와 출혈을 입을 수 있다.</p></div>
+  <div class="rule"><b>레서 · 스폰</b><p>킨 아래의 하위 혈통. 힘과 디서플린 계승 범위가 더욱 제한된다.</p></div>
+  <div class="rule"><b>흡혈과 독액</b><p>흡혈은 생존이다. 송곳니의 독액은 고통을 무디게 하고 강렬한 쾌감을 일으킨다. 물린 상처는 실제로 남는다.</p></div>
+  <div class="rule"><b>공복과 숙면</b><p>굶을수록 힘과 디서플린이 약해지고 끝내 숙면에 빠진다. 평소 뛰는 심장도 숙면 중에는 멈춘다.</p></div>
+  <div class="rule"><b>빛과 죽음</b><p>빛에 닿는 즉시 타지 않는다. 직접적인 빛은 공복을 가속한다. 일반 뱀파이어는 숙면 중 빛에 노출되면 재가 되어 죽는다.</p></div>
+  <div class="rule"><b>포옹</b><p>한 번 물렸다고 뱀파이어가 되지 않는다. 인간을 동족으로 바꾸려면 독액을 이용한 의도적인 변화 의식 ‘포옹’이 필요하다.</p></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="section-no">06 / Blood, Noctilia & Taboo</div><h2>생존을 연결하는 것들</h2>
+ <div class="profile-grid">
+  <div>
+   <h3>녹틸리아</h3>
+   <p>레이븐의 안개 숲에서 자라는 희귀 식물. 피 없이 뱀파이어의 몸과 공복을 회복시키며 디서플린 계승에 반드시 필요하다. 인간이 녹틸리아를 가져오면 먹이가 아니라 거래자·협력자·보호 대상으로 관계가 바뀔 수 있다.</p>
+   <h3>심장</h3>
+   <p>인간을 뱀파이어로 만들지 않고 특정 뱀파이어와 생명을 연결하는 관계. 인간의 본질을 유지한 채 영생을 공유하며 연결된 뱀파이어가 죽으면 심장도 죽는다.</p>
+  </div>
+  <div>
+   <h3>던필</h3>
+   <p>인간 여성과 뱀파이어 사이에서 태어날 수 있는 존재. 숙면과 빛 없이 뱀파이어를 직접 죽일 수 있어 뱀파이어 사회의 가장 위험한 금기 가운데 하나다.</p>
+   <h3>불문율</h3>
+   <p>동족에게 돌이킬 수 없는 피해를 주지 않는다. 인간 사회 전체에 뱀파이어의 존재를 공개하지 않는다. 먹이를 함부로 죽이지 않고 다른 뱀파이어의 심장이나 녹틸리아 거래 상대를 건드리지 않는다. 자신이 포옹한 자식의 행동에는 대부도 책임을 진다.</p>
+  </div>
+ </div>
+</div></section>
+
+<section id="core" class="heart">
+ <div class="mark">♥</div>
+ <blockquote>먹어야 하는 인간이<br>먹어서는 안 되는 인간이 되고,<br><strong>반드시 살아 있어야 하는 인간이 된다.</strong></blockquote>
+ <p style="max-width:760px;margin:28px auto;color:#aaa">발렌틴에게 사랑은 흡혈 욕구가 사라지는 일이 아니다. 가장 원하는 피를 가진 사람의 생명을 자신의 욕망보다 우선하게 되는 변화다. 모든 것을 분석할 수 있다고 믿었던 남자가 처음으로 분석하거나 제거할 수 없는 감정을 만난다.</p>
+ <small>THE HEARTBEAT MOTIF</small>
+</section>
+
+<section><div class="wrap">
+ <div class="section-no">07 / The Core</div><h2>THE RAVEN</h2>
+ <p class="intro">이 세계의 중심은 인간과 뱀파이어의 모순된 공존이다. 뱀파이어는 인간보다 압도적으로 강하고 인간의 피를 필요로 하지만 인간이 사라지면 자신들 역시 살아갈 수 없다. 인간은 먹이인 동시에 녹틸리아 거래자, 심장, 협력자와 보호 대상이 될 수 있다.</p>
+ <p>발렌틴 역시 그 모순 위에 서 있다. 사람을 살리는 검은 장갑의 손과 사람의 피를 원하는 송곳니를 동시에 가진 존재. 그의 이야기는 괴물이 사랑을 통해 인간으로 변하는 이야기가 아니라, 인간이었을 때부터 자기 안에 남아 있던 다정함과 애정이 뱀파이어가 된 뒤에도 사라지지 않았음을 가장 늦게 깨닫는 이야기다.</p>
+</div></section>
+</main>
+
+<footer>THE RAVEN · VALENTIN WARD · BLOOD / PLAGUE / HEARTBEAT</footer>
+</body>
+</html>
